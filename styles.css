@@ -7,7 +7,7 @@ body{
 .NavBar{
     float:left;
     width:100%;
-    height:9em;
+    height:fit-content;
     background-color: rgb(37, 40, 48);
     position: fixed;
     top: 0px;
@@ -19,6 +19,7 @@ body{
         margin-top: 1em;
         margin-bottom: 0em;
     }
+
     .NavBar a{
         color: #ccc;
         text-decoration: none;
@@ -94,3 +95,22 @@ body{
                     margin-block-start: 0.5em;
                     margin-block-end: 0.5em;
                 }
+
+@media (max-width: 600px) 
+{  
+    .NavBar{
+        padding-left: 2%;
+    }
+
+        .NavBar h1{
+            font-size: 3em;
+        }
+
+        .NavBar h3{
+            font-size: 1.5em;
+        }
+
+        .PortfolioContainer{
+            margin-top: 13em;
+        }
+}
