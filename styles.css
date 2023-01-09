@@ -4,6 +4,10 @@ body{
     font-family: sans-serif;
 }
 
+video {
+    clip-path: inset(1px 1px);
+}
+
 .NavBar{
     float:left;
     width:100%;
