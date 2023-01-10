@@ -84,6 +84,7 @@ video {
                 margin: 0.5em;
                 margin-top: -0.5em;
                 border-radius: 0.8em;
+                z-index: 5;
             }
                 .PortfolioItemInfo h2{
                     color: #ff9849;
