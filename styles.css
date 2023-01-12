@@ -32,12 +32,15 @@ video {
     }
     
     .PortfolioContainer{
-        float: left;
+        float: center;
         margin: 0em;
         height: fit-content;
         width: 100%;
+        max-width: 65em;
         margin-top: 9em;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
         .PortfolioItem{
             display: inline-block;
