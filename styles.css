@@ -129,6 +129,14 @@ video {
     }
 
         .PortfolioContainer{
-            margin-top: 9em;
+            margin-top: 13em;
+        }
+
+        .NavBar h1{
+            font-size: 3em;
+        }
+
+        .NavBar h3{
+            font-size: 1.5em;
         }
 }
