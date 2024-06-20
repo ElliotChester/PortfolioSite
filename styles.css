@@ -10,14 +10,18 @@ video {
 
 .NavBar{
     float:left;
-    width:100%;
+    width:86%;
     height:fit-content;
-    background-color: rgb(37, 40, 48);
+    background-color: rgba(37, 40, 48, 0.8);
     position: fixed;
     top: 0px;
     margin-bottom: 5em;
     padding-left: 12%;
     z-index: 10;
+    border-radius: 1em;
+    backdrop-filter: blur(10px);
+    margin-top: 1em;
+    margin-left: 1%;
 }
     .NavBar h1{
         color: #ff9849;
@@ -82,11 +86,12 @@ video {
                 padding-left: 1em;
                 padding-right: 1em;
                 box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);
-                background-color: rgb(37, 40, 48);
+                background-color: rgba(37, 40, 48, 0.8);
                 margin: 0.5em;
                 margin-top: -0.5em;
                 border-radius: 0.8em;
                 z-index: 5;
+                backdrop-filter: blur(10px);
             }
                 .PortfolioItemInfo h2{
                     color: #ff9849;
@@ -108,17 +113,12 @@ video {
 {  
     .NavBar{
         padding-left: 2%;
+        width:calc(98% - 2em);
+        margin-left: 1em;
+
     }
 
-        .NavBar h1{
-            font-size: 3em;
-        }
-
-        .NavBar h3{
-            font-size: 1.5em;
-        }
-
         .PortfolioContainer{
-            margin-top: 13em;
+            margin-top: 9em;
         }
 }
