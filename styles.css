@@ -19,7 +19,7 @@ video {
     padding-left: 12%;
     z-index: 10;
     border-radius: 1em;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     margin-top: 1em;
     margin-left: 1%;
 }
@@ -57,11 +57,20 @@ video {
             overflow: hidden;
             text-align: left;
             box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);
+            overflow-wrap: anywhere;
         }
             .PortfolioImage{
                 float: left;
                 width: 100%;
                 height: auto;
+
+                --mask: linear-gradient(to bottom,
+                rgba(0,0,0, 1) 98%, rgba(0,0,0, 0) 100%
+                ) 100% 50% / 100% 100% repeat-x;
+            
+                -webkit-mask: var(--mask); 
+                mask: var(--mask);
+
             }
                 .MultiChild{
                     padding-top: 1em;
@@ -85,13 +94,14 @@ video {
                 height: fit-content;
                 padding-left: 1em;
                 padding-right: 1em;
-                box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);
-                background-color: rgba(37, 40, 48, 0.8);
+                /*box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);*/
+                background-color: rgba(37, 40, 48, 0.5);
                 margin: 0.5em;
                 margin-top: -0.5em;
-                border-radius: 0.8em;
+                border-radius: 0.5em;
                 z-index: 5;
-                backdrop-filter: blur(10px);
+                backdrop-filter: blur(50px);
+                border: rgba(255, 255, 255, 0.1) 1px solid;
             }
                 .PortfolioItemInfo h2{
                     color: #ff9849;
