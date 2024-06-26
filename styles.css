@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(19, 20, 24);
     margin: 0;
     font-family: sans-serif;
@@ -8,136 +8,156 @@ video {
     clip-path: inset(1px 1px);
 }
 
-.NavBar{
-    float:left;
-    width:86%;
-    height:fit-content;
-    background-color: rgba(37, 40, 48, 0.8);
+.NavBar {
+    float: left;
+    width: calc(100% - 2em);
+    height: fit-content;
     position: fixed;
     top: 0px;
     margin-bottom: 5em;
-    padding-left: 12%;
-    z-index: 10;
-    border-radius: 1em;
-    backdrop-filter: blur(50px);
-    margin-top: 1em;
-    margin-left: 1%;
-    border: rgba(255, 255, 255, 0.05) 1px solid;
-}
-    .NavBar h1{
-        color: #ff9849;
-        margin-top: 1em;
-        margin-bottom: 0em;
-    }
-
-    .NavBar a{
-        color: #ccc;
-        text-decoration: none;
-        margin-top: 0em;
-    }
+    z-index: 10;    
     
-    .PortfolioContainer{
-        margin: 0em;
-        height: fit-content;
-        width: 100%;
-        max-width: 65em;
-        margin-top: 9em;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-        .PortfolioItem{
-            display: inline-block;
-            height:fit-content;
-            background-color: rgb(54, 60, 68);
-            width:auto;
-            max-width: 60em;
-            color: #eee;
-            margin: 1em;
-            border-radius: 1em;
-            overflow: hidden;
-            text-align: left;
-            box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);
-            overflow-wrap: anywhere;
-        }
-            .PortfolioImage{
-                float: left;
-                width: 100%;
-                height: auto;
+    margin-left: 1em;
+    display: flex;
+    justify-content: center;
+}
 
-                --mask: linear-gradient(to bottom,
-                rgba(0,0,0, 1) 98%, rgba(0,0,0, 0) 100%
-                ) 100% 50% / 100% 100% repeat-x;
-            
-                -webkit-mask: var(--mask); 
-                mask: var(--mask);
+.NavBarContent {
+    width: 100%;
+    max-width: 70em;
+    backdrop-filter: blur(50px);
+    background-color: rgba(37, 40, 48, 0.8);
+    border: rgba(255, 255, 255, 0.05) 1px solid;
+    height: fit-content;
+    border-radius: 1em;
+    margin-top: 1em;
+}
 
-            }
-                .MultiChild{
-                    padding-top: 1em;
-                    padding-bottom: 1.5em;
-                    text-align: center;
-                }
-                .MultiImage3{
-                    display: inline-block;
-                    width: 31%; 
-                    margin-right: 1.5%;
-                    border-radius: 0.5em;
-                    box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);
-                }
-                .square{
-                    aspect-ratio: 1/1;
-                }
-            
-            .PortfolioItemInfo{
-                float: left;
-                width: auto;
-                height: fit-content;
-                padding-left: 1em;
-                padding-right: 1em;
-                /*box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);*/
-                background-color: rgba(37, 40, 48, 0.5);
-                margin: 0.5em;
-                margin-top: -0.5em;
-                border-radius: 0.5em;
-                z-index: 5;
-                backdrop-filter: blur(50px);
-                border: rgba(255, 255, 255, 0.1) 1px solid;
-            }
-                .PortfolioItemInfo h2{
-                    color: #ff9849;
-                }
-                .PortfolioItemInfo p{
-                    color: #eee;
-                }
-                .PortfolioItemInfo a{
-                    color: #ff9849;
-                    text-decoration: none;
-                }
+.NavBarContent h1 {
+    color: #ff9849;
+    margin-top: 0.5em;
+    margin-bottom: 0em;
+    margin-left: 0.5em;
+}
 
-                .PortfolioItemInfo h3{
-                    margin-block-start: 0.5em;
-                    margin-block-end: 0.5em;
-                }
+.NavBarContent h3{
+    margin-left: 1em;
+}
 
-@media (max-width: 600px) 
-{  
-    .NavBar{
+.NavBarContent a {
+    color: #eee;
+    text-decoration: none;
+    margin-top: 0em;
+}
+
+ .PortfolioContainer {
+    margin: 0em;
+    height: fit-content;
+    width: 100%;
+    max-width: 65em;
+    margin-top: 9em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.PortfolioItem {
+    display: inline-block;
+    height: fit-content;
+    background-color: rgb(54, 60, 68);
+    width: auto;
+    max-width: 60em;
+    color: #eee;
+    margin: 1em;
+    border-radius: 1em;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);
+    overflow-wrap: anywhere;
+}
+
+.PortfolioImage {
+    float: left;
+    width: 100%;
+    height: auto;
+
+    --mask: linear-gradient(to bottom,
+            rgba(0, 0, 0, 1) 98%, rgba(0, 0, 0, 0) 100%) 100% 50% / 100% 100% repeat-x;
+
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+
+}
+
+.MultiChild {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+.MultiImage3 {
+    display: inline-block;
+    width: 31%;
+    margin-right: 1.5%;
+    border-radius: 0.5em;
+    box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);
+}
+
+.square {
+    aspect-ratio: 1/1;
+}
+
+.PortfolioItemInfo {
+    float: left;
+    width: auto;
+    height: fit-content;
+    padding-left: 1em;
+    padding-right: 1em;
+    /*box-shadow: 0em 0em 0.5em rgba(0, 0, 0, 0.5);*/
+    background-color: rgba(37, 40, 48, 0.5);
+    margin: 0.5em;
+    margin-top: -0.5em;
+    border-radius: 0.5em;
+    z-index: 5;
+    backdrop-filter: blur(50px);
+    border: rgba(255, 255, 255, 0.1) 1px solid;
+}
+
+.PortfolioItemInfo h2 {
+    color: #ff9849;
+}
+
+.PortfolioItemInfo p {
+    color: #eee;
+}
+
+.PortfolioItemInfo a {
+    color: #ff9849;
+    text-decoration: none;
+}
+
+.PortfolioItemInfo h3 {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+@media (max-width: 600px) {
+    .NavBar {
         padding-left: 2%;
-        width:calc(98% - 2em);
+        width: calc(98% - 2em);
         margin-left: 1em;
 
     }
 
-        .PortfolioContainer{
-            margin-top: 13em;
-        }
+    .PortfolioContainer {
+        margin-top: 13em;
+    }
 
-        .NavBar h1{
-            font-size: 3em;
-        }
+    .NavBar h1 {
+        font-size: 3em;
+    }
 
-        .NavBar h3{
-            font-size: 1.5em;
-        }
+    .NavBar h3 {
+        font-size: 1.5em;
+    }
 }
