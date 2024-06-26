@@ -22,6 +22,7 @@ video {
     backdrop-filter: blur(50px);
     margin-top: 1em;
     margin-left: 1%;
+    border: rgba(255, 255, 255, 0.01) 1px solid;
 }
     .NavBar h1{
         color: #ff9849;
